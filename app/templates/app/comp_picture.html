@@ -5,8 +5,16 @@
     <title>Title</title>
 </head>
     <body>
-        <div class="card-image">
-            <img src="{% static item.img %}">
-        </div>
+        <div class="col s12 m8">
+            <div class="card">
+              <div class="card-image">
+                <img src="{% static item.img %}">
+              </div>
+              <div class="card-content">
+                <span class="card-title black-text">{{ item.title }}</span>
+                {{ item.text }}
+              </div>
+            </div>
+          </div>
     </body>
 </html>
